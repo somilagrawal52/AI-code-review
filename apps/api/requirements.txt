@@ -1,0 +1,17 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+sqlalchemy[asyncio]>=2.0,<3
+asyncpg>=0.29,<1
+aiosqlite>=0.20,<1
+alembic>=1.13,<2
+pydantic-settings>=2.4,<3
+httpx>=0.27,<1
+PyJWT[crypto]>=2.9,<3
+openai>=1.40,<2
+# Pinned because the 0.3 series is compatible with the Python 3.12 / OpenAI 1.x local MVP.
+# Upgrade this alongside the OpenAI SDK after validating the agent-runtime API in production.
+openai-agents==0.3.3
+python-dotenv>=1.0,<2
+pytest>=8.2,<9
+pytest-asyncio>=0.23,<1
+ruff>=0.6,<1

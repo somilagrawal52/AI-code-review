@@ -1,0 +1,5 @@
+export type Severity = "critical" | "high" | "medium" | "low" | "info";
+export type Issue = { title: string; description: string; category: string; severity: Severity; file_path: string; start_line?: number; end_line?: number; code_snippet?: string; explanation: string; suggested_fix?: string; confidence: number; agent: string; can_auto_fix: boolean };
+export type Review = { id: string; status: string; summary?: string; overall_score?: number; scores: Record<string, number>; issues: Issue[]; partial: boolean; analyzed_files: number; total_files: number; created_at?: string };
+export type Repository = { id: string; owner: string; name: string; description?: string; language?: string; private: boolean; default_branch: string; stars: number; open_pull_count: number; updated_at?: string };
+export type Pull = { id: string; number: number; title: string; author: string; state: string; base_branch: string; head_branch: string; additions: number; deletions: number; changed_files: number; commits: number };
