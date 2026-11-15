@@ -9,5 +9,6 @@ __pycache__/
 *.pyc
 *.tsbuildinfo
 *.sqlite3
+*.db
 dist/
 coverage/
